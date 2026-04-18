@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎵 Music Playlist Manager</h1>
+
+<div class="container">
+
+    <input type="text" id="songName" placeholder="Song Name">
+    <input type="text" id="artistName" placeholder="Artist">
+    <button onclick="addSong()">Add Song</button>
+
+    <ul id="playlist"></ul>
+
+    <div class="controls">
+        <button onclick="prevSong()">⏮ Prev</button>
+        <button onclick="nextSong()">Next ⏭</button>
+        <button onclick="shuffle()">🔀 Shuffle</button>
+    </div>
+
+    <h2 id="nowPlaying">Now Playing: None</h2>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
